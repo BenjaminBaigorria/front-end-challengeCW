@@ -9,12 +9,12 @@ function Card(props) {
         <div className="card-body">
           <div className="text-center">
             <h4 className="display-6">{props.texto || "No Text"}</h4>
-            <h5>
+            <div>
               {props.pal && props.texto ? (
-                <h4 >Es Palindromo!</h4>
-              ) :  props.texto? (<h4>No es Palindromo!</h4>):(<h4>...</h4>) }
+                <h4 >Palindrome!</h4>
+              ) :  props.texto? (<h4>Not Palindrome!</h4>):(<h4>...</h4>) }
                 
-            </h5>
+            </div>
           </div>
         </div>
         </div>

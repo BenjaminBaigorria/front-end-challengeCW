@@ -17,7 +17,6 @@ export default function Navbar() {
         ...text,
         [e.target.name]: e.target.value
     })
-    console.log(text)
   }
 
   function handleSubmit(e){
@@ -34,7 +33,7 @@ export default function Navbar() {
         <div className='navbar-nav mx-auto'>
         <form className="d-flex">
             <input  placeholder=" ingrese texto. . ." className="form-control me-2" type="text" name="text"  onChange={(e)=>handleInput(e)}/>
-            <button className="btn btn-outline-light" onClick={(e)=>handleSubmit(e)} type="submit">Enviar</button>
+            <button className="btn btn-outline-light" onClick={(e)=>handleSubmit(e)} type="submit">Send</button>
         </form>
         </div>
       </div>

@@ -9,7 +9,7 @@ function App() {
         <div className="container">
           <div className="text-center">
             <div className="containerr">
-              <h3>Resultados</h3>
+              <h3>Results</h3>
             </div>
           </div>
         <Container></Container> 
