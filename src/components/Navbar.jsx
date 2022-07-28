@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="container-fluid">
         <div className='navbar-nav mx-auto'>
         <form className="d-flex">
-            <input className="form-control me-2" type="text" name="text" onChange={(e)=>handleInput(e)}/>
+            <input  placeholder=" ingrese texto. . ." className="form-control me-2" type="text" name="text"  onChange={(e)=>handleInput(e)}/>
             <button className="btn btn-outline-light" onClick={(e)=>handleSubmit(e)} type="submit">Enviar</button>
         </form>
         </div>

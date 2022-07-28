@@ -8,13 +8,12 @@ function Card(props) {
         <div className="Cardd">
         <div className="card-body">
           <div className="text-center">
-            <h4 className="display-5">{props.texto || "No Text"}</h4>
+            <h4 className="display-6">{props.texto || "No Text"}</h4>
             <h5>
               {props.pal && props.texto ? (
-                <div>Es Palindromo!</div>
-              ) : (
-                <div>No es Palindromo!</div>
-              )}
+                <h4 >Es Palindromo!</h4>
+              ) :  props.texto? (<h4>No es Palindromo!</h4>):(<h4>...</h4>) }
+                
             </h5>
           </div>
         </div>
@@ -28,6 +27,7 @@ export default Card;
 
 /*<div classNameName="card" style={obj}>
       <div classNameName="card-body">
+      style="width: 18rem;
        <h6>{props.texto}{props.pal? (<div>Es Palindromo!</div>):(<div>No es Palindromo!</div>)}</h6>
       </div>
     </div> */
