@@ -27,11 +27,11 @@ export default function Navbar() {
 
 
   return (
-    <div>
+    <nav>
         <form>
             <input type="text" name="text" onChange={(e)=>handleInput(e)}/>
             <input onClick={(e)=>handleSubmit(e)} type="submit" value="Enviar"/>
         </form>
-    </div>
+    </nav>
   )
 }
