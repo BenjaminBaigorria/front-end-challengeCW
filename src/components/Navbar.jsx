@@ -27,7 +27,7 @@ export default function Navbar() {
 
 
   return (
-    <div className='navv'>
+    <div className='navv' data-testid="nav-1">
     <nav className="navbar bg-dark">
       <div className="container-fluid">
         <div className='navbar-nav mx-auto'>
