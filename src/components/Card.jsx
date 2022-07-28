@@ -1,17 +1,25 @@
 import React from "react";
+import "../styler.css";
 
 function Card(props) {
-  const obj = { width: "20rem" };
   return (
-    <div className="card" style={obj}>
-      <div className="card-body">
-        <div className="border text-center">
-        <h5 className="card-title">{props.texto||"No Text"}</h5>
-        <h6>
-          {props.pal && props.texto? <div>Es Palindromo!</div> : <div></div>}
-        </h6>
+    <div className="container">
+      
+        <div className="Cardd">
+        <div className="card-body">
+          <div className="text-center">
+            <h4 className="display-5">{props.texto || "No Text"}</h4>
+            <h5>
+              {props.pal && props.texto ? (
+                <div>Es Palindromo!</div>
+              ) : (
+                <div>No es Palindromo!</div>
+              )}
+            </h5>
+          </div>
         </div>
-      </div>
+        </div>
+      
     </div>
   );
 }
